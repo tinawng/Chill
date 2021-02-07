@@ -1,0 +1,106 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  @apply text-white;
+}
+
+h1 {
+  @apply text-xl;
+  font-family: "poppins-bold";
+}
+h2 {
+  @apply text-lg;
+  font-family: "opensans-light";
+}
+h3 {
+  font-family: "opensans-regular";
+}
+h4 {
+  @apply text-xs uppercase;
+}
+
+/* 📈 Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff22; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff55; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffffaa; 
+}
+
+
+/* 💫 Animations */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.squish-enter-active, .squish-leave-active {
+  transition: opacity .2s;
+}
+.squish-enter, .squish-leave-to {
+  opacity: 0;
+}
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg) scale(1.1);
+  }
+  to {
+      transform: rotate(360deg) scale(1);
+  }
+}
+
+/* 🍱 Refs fonts */
+@font-face {
+  font-family: 'poppins-bold';
+  font-display: swap;
+  src: local(''),
+       url('../../static/fonts/poppins/poppins-v15-latin-700.woff2') format('woff2'),
+       url('../../static/fonts/poppins/poppins-v15-latin-700.woff') format('woff'),
+       url('../../static/fonts/poppins/poppins-v15-latin-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-regular';
+  font-display: swap;
+  src: local(''),
+    url('../../static/fonts/opensans/open-sans-v18-latin-regular.woff2') format('woff2'),
+    url('../../static/fonts/opensans/open-sans-v18-latin-regular.woff') format('woff'),
+    url('../../static/fonts/opensans/open-sans-v18-latin-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-light';
+  font-display: swap;
+  src: local(''),
+    url('../../static/fonts/opensans/open-sans-v18-latin-300.woff2') format('woff2'),
+    url('../../static/fonts/opensans/open-sans-v18-latin-300.woff') format('woff'),
+    url('../../static/fonts/opensans/open-sans-v18-latin-300.ttf') format('truetype');
+}

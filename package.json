@@ -1,0 +1,23 @@
+{
+  "name": "chill",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "deploy": "scp -r ./dist siyu:/home/pi/work/static-servers/chill"
+  },
+  "dependencies": {
+    "color-thief-node": "^1.0.3",
+    "core-js": "^3.6.5",
+    "node-fetch": "^2.6.1",
+    "nuxt": "^2.14.6",
+    "youtube-player": "^5.5.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "autoprefixer": "9",
+    "postcss": "7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}
