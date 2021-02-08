@@ -5,13 +5,13 @@
     :style="'background: ' + album.color_pallete[0]"
     @mouseleave="show_expansion_panel = false"
   >
-   <div v-if="$ua.isFromPc()">
+    <div v-if="$ua.isFromPc()">
       <span>PC</span>
     </div>
-   <div v-if="$ua.isFromSmartphone()">
+    <div v-if="$ua.isFromSmartphone()">
       <span>smartphone</span>
     </div>
-    
+
     <div
       v-if="is_player_ready"
       class="navigation-container"
@@ -236,7 +236,7 @@ export default {
     current_track: undefined,
     show_expansion_panel: false,
     expansion: undefined,
-    is_mouse_down: false
+    is_mouse_down: false,
   }),
   computed: {
     navigation_container_css_vars: function () {
@@ -278,6 +278,9 @@ export default {
             let volume = await this.player.getVolume();
             volume = Math.max(volume - 10, 0);
             this.setVolume(volume);
+          } else if (event.code.startsWith("Digit")) {
+            let digit = parseInt(event.code.slice(event.code.length - 1));
+            this.player.seekTo(this.album.duration * (digit / 10));
           }
       }.bind(this)
     );
