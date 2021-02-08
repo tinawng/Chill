@@ -19,10 +19,10 @@
   },
   {
     "type": "album",
-    "youtube_id": "Fn7-9mI06U4",
-    "cover": "https://f4.bcbits.com/img/a2773535169_10.jpg",
-    "name": "Two / Seven",
-    "artist": "Aso"
+    "youtube_id": "JfPx2Pf9wQM",
+    "cover": "https://f4.bcbits.com/img/a2853991834_10.jpg",
+    "name": "Second Wind",
+    "artist": "L'indécis"
   },
   {
     "type": "album",
@@ -64,6 +64,36 @@
     "type": "mixtape",
     "youtube_id": "90h7Pzaoys8",
     "name": "Love To The World Session #1",
+    "artist": "Folamour"
+  },
+  {
+    "type": "mixtape",
+    "youtube_id": "roQuEqxjDx4",
+    "name": "Set Live From DJ Mag",
+    "artist": "Folamour"
+  },
+  {
+    "type": "mixtape",
+    "youtube_id": "AIu_1A40M6A",
+    "name": "New Year's Eve",
+    "artist": "Folamour"
+  },
+  {
+    "type": "mixtape",
+    "youtube_id": "TJBfwwZkHr8",
+    "name": "Boiler Room: Streaming from Isolation",
+    "artist": "Folamour"
+  },
+  {
+    "type": "mixtape",
+    "youtube_id": "5kMGLrps35o",
+    "name": "I Love Techno Festival Livestream",
+    "artist": "Folamour"
+  },
+  {
+    "type": "mixtape",
+    "youtube_id": "wL-VMOGAhzE",
+    "name": "Boiler Room x FLY Open Air 2019",
     "artist": "Folamour"
   }
 ]
