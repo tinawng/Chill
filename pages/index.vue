@@ -17,142 +17,9 @@
       class="navigation-container"
       :style="navigation_container_css_vars"
     >
-      <div class="showcase-container">
-        <img :src="album.cover" alt="cover" />
-        <div>
-          <h1>{{ current_track.title }}</h1>
-          <h2>
-            {{ current_track.artist
-            }}<span v-show="album.type != 'mixtape'"> • {{ album.name }}</span>
-          </h2>
-        </div>
-        <div class="extra-controls" @click="openExpansionPanel('albums')">
-          <h4>more albums</h4>
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="3"></circle>
-          </svg>
-        </div>
-        <svg
-          v-if="player_state == 3"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-        >
-          <polyline points="23 4 23 10 17 10"></polyline>
-          <polyline points="1 20 1 14 7 14"></polyline>
-          <path
-            d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
-          ></path>
-        </svg>
-      </div>
-      <div class="controls-container">
-        <svg
-          v-if="player_state != 1"
-          style="padding-left: 0.75rem"
-          @click="playPause()"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-        <svg
-          v-else
-          @click="playPause()"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-        >
-          <rect x="6" y="4" width="4" height="16"></rect>
-          <rect x="14" y="4" width="4" height="16"></rect>
-        </svg>
-        <svg
-          :class="{ 'opacity-30': current_track.index == 0 }"
-          @click="previousTrack()"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <polygon points="19 20 9 12 19 4 19 20"></polygon>
-          <line x1="5" y1="19" x2="5" y2="5"></line>
-        </svg>
-        <svg
-          @click="nextTrack()"
-          :class="{
-            'opacity-30': current_track.index == album.tracks.length - 1,
-          }"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <polygon points="5 4 15 12 5 20 5 4"></polygon>
-          <line x1="19" y1="5" x2="19" y2="19"></line>
-        </svg>
-        <svg
-          v-if="is_player_muted"
-          @click="mute()"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-          <line x1="23" y1="9" x2="17" y2="15"></line>
-          <line x1="17" y1="9" x2="23" y2="15"></line>
-        </svg>
-        <svg
-          v-else
-          @click="mute()"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-          <path
-            d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
-          ></path>
-        </svg>
+      <showcase />
+      <controls />
 
-        <div
-          ref="volume-bar-clickable-container"
-          class="volume-bar-clickable-container"
-        >
-          <div class="volume-bar-container" @mousemove="setVolume">
-            <div ref="volume-bar-set" class="volume-bar-set" />
-          </div>
-        </div>
-
-        <span>{{ current_track.index + 1 }} / {{ album.tracks.length }}</span>
-
-        <svg
-          @click="openExpansionPanel('playlist')"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line x1="8" y1="6" x2="21" y2="6"></line>
-          <line x1="8" y1="12" x2="21" y2="12"></line>
-          <line x1="8" y1="18" x2="21" y2="18"></line>
-          <line x1="3" y1="6" x2="3.01" y2="6"></line>
-          <line x1="3" y1="12" x2="3.01" y2="12"></line>
-          <line x1="3" y1="18" x2="3.01" y2="18"></line>
-        </svg>
-      </div>
       <transition name="fade">
         <div v-if="show_expansion_panel" class="expansion-panel-container">
           <div v-if="expansion == 'playlist'" class="playlist-container">
@@ -207,7 +74,9 @@
 
 <script>
 import YouTubePlayer from "youtube-player";
+import Controls from "../components/Controls.vue";
 export default {
+  components: { Controls },
   async asyncData({ $albums }) {
     var albums = $albums;
     return { albums };
@@ -474,97 +343,6 @@ svg {
 }
 .page-container:hover .navigation-container {
   height: var(--control_container_hover_height);
-}
-
-.showcase-container {
-  @apply h-28 flex;
-}
-.showcase-container * {
-  @apply my-auto;
-}
-.showcase-container img {
-  @apply h-full;
-}
-.showcase-container div {
-  @apply ml-4;
-}
-.showcase-container .extra-controls svg {
-  @apply h-8 w-8 ml-4;
-}
-.showcase-container > svg {
-  @apply h-10 w-10 ml-8;
-  @apply opacity-60;
-
-  animation-name: spin;
-  animation-duration: 1.41s;
-  animation-iteration-count: infinite;
-}
-.showcase-container :nth-child(3n) {
-  @apply ml-auto;
-}
-.extra-controls {
-  @apply pl-4 py-1 opacity-0 rounded-full;
-  @apply flex items-center;
-  @apply cursor-pointer;
-  transition: opacity 0.2s;
-}
-.extra-controls:hover {
-  background: #00000033;
-}
-.extra-controls:active {
-  background: #00000066;
-}
-.page-container:hover .extra-controls {
-  @apply opacity-70;
-}
-
-.controls-container {
-  @apply mt-6 flex items-center;
-  @apply opacity-0;
-
-  transition: opacity 0.2s;
-}
-.page-container:hover .controls-container {
-  @apply opacity-100;
-}
-.controls-container svg {
-  @apply h-10 w-10 p-2 rounded-full;
-  transition: background 0.2s;
-}
-.controls-container svg:hover {
-  background: #00000033;
-}
-.controls-container svg:active {
-  background: #00000066;
-}
-.controls-container svg:first-of-type {
-  @apply h-12 w-12 -ml-2 mr-4;
-}
-.controls-container svg:nth-of-type(4n) {
-  @apply ml-4 mr-2;
-}
-.controls-container :nth-child(6n) {
-  @apply ml-auto;
-}
-.controls-container svg:last-of-type {
-  @apply ml-2 -mr-1;
-}
-.controls-container .volume-bar-clickable-container {
-  @apply w-28 py-2;
-  @apply cursor-pointer;
-}
-.controls-container .volume-bar-container {
-  @apply relative;
-  @apply h-1.5 w-28;
-
-  background: #ffffff22;
-}
-.controls-container .volume-bar-set {
-  @apply absolute left-0;
-  @apply h-full w-4/5;
-  @apply cursor-pointer;
-
-  background: #ffffff66;
 }
 
 .expansion-panel-container {
