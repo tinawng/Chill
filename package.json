@@ -12,7 +12,6 @@
     "core-js": "^3.6.5",
     "node-fetch": "^2.6.1",
     "nuxt": "^2.14.6",
-    "nuxt-user-agent": "^1.2.2",
     "youtube-player": "^5.5.2"
   },
   "devDependencies": {

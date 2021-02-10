@@ -38,9 +38,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    'nuxt-user-agent',
-  ],
+  modules: [],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

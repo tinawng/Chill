@@ -2,23 +2,28 @@
   <div
     ref="page-container"
     class="page-container"
-    :style="'background: ' + album.color_pallete[0]"
+    :style="color_pallete_css_var + 'background: var(--color_pallete)'"
     @mouseleave="show_expansion_panel = false"
   >
-    <div v-if="$ua.isFromPc()">
-      <span>PC</span>
-    </div>
-    <div v-if="$ua.isFromSmartphone()">
-      <span>smartphone</span>
-    </div>
-
+    <div
+      v-if="is_mobile"
+      class="absolute top-0 h-1/5 w-full z-10"
+      style="
+        background: linear-gradient(0, #ffffff00 10%, var(--color_pallete) 90%);
+      "
+    ></div>
     <div
       v-if="is_player_ready"
       class="navigation-container"
-      :style="navigation_container_css_vars"
+      :style="navigation_container_css_vars + 'background: linear-gradient(180deg, #ffffff00 0%, var(--color_pallete) 25%);'"
     >
-      <showcase />
-      <controls />
+      <!-- <div
+        v-if="is_mobile"
+        class="h-12 w-full z-10"
+        :style="'background: linear-gradient(180deg, #ffffff00 10%, var(--color_pallete) 90%);'"
+      ></div> -->
+      <Showcase ref="showcase-container" />
+      <Controls ref="controls-container" />
 
       <transition name="fade">
         <div v-if="show_expansion_panel" class="expansion-panel-container">
@@ -95,6 +100,8 @@ export default {
   },
 
   data: () => ({
+    is_mobile: false,
+    is_mouse_down: false,
     album: undefined,
     albums_typelist: [],
     is_player_ready: false,
@@ -105,15 +112,17 @@ export default {
     current_track: undefined,
     show_expansion_panel: false,
     expansion: undefined,
-    is_mouse_down: false,
   }),
   computed: {
     navigation_container_css_vars: function () {
       var css_vars = "--control_container_hover_height: ";
-      css_vars += this.show_expansion_panel ? "100%" : "18rem";
-      css_vars += ";--navigation_container_transition_duration: ";
-      css_vars += this.show_expansion_panel ? "0.6s" : "0.4s";
+      css_vars += this.show_expansion_panel ? "100%;" : "18rem;";
+      css_vars += "--navigation_container_transition_duration: ";
+      css_vars += this.show_expansion_panel ? "0.6s;" : "0.4s;";
       return css_vars;
+    },
+    color_pallete_css_var: function () {
+      return "--color_pallete: " + this.album.color_pallete[0] + ";";
     },
   },
   watch: {
@@ -127,8 +136,8 @@ export default {
     this.album = this.getRandomAlbum("album");
   },
   mounted() {
-    this.selectAlbum();
-
+    this.isMobile();
+    window.addEventListener("resize", this.isMobile.bind(this));
     window.addEventListener(
       "keyup",
       async function (event) {
@@ -166,11 +175,17 @@ export default {
       }).bind(this)
     );
 
+    this.selectAlbum();
+
     console.log(
       "🚨 ~~ All the following errors are caused by youtube-embed iframe javascript bull💩 ~~ 🚨"
     );
   },
   methods: {
+    isMobile() {
+      this.is_mobile = !window.matchMedia("(min-width: 768px)").matches;
+    },
+
     onPlayerReady(event) {
       this.is_player_ready = true;
 
@@ -216,8 +231,9 @@ export default {
 
     setVolume(event) {
       if (typeof event == "object" && this.is_mouse_down) {
-        const maxWidth = this.$refs["volume-bar-clickable-container"]
-          .clientWidth;
+        const maxWidth = this.$refs["controls-container"].$refs[
+          "volume-bar-clickable-container"
+        ].clientWidth;
         var volume = Math.max(
           0,
           Math.min((event.offsetX / maxWidth) * 100, 100)
@@ -226,7 +242,8 @@ export default {
         var volume = event;
       }
 
-      this.$refs["volume-bar-set"].style.width = volume + "%";
+      this.$refs["controls-container"].$refs["volume-bar-set"].style.width =
+        volume + "%";
       this.player.setVolume(volume);
       if (this.is_player_muted) this.mute();
     },
@@ -334,15 +351,20 @@ svg {
 }
 
 .navigation-container {
-  @apply absolute bottom-0 left-0 z-10;
-  @apply h-56 w-full p-8;
-  @apply flex flex-col;
+  @apply absolute bottom-0 left-0 z-10 h-1/3;
 
-  transition-property: height;
-  transition-duration: var(--navigation_container_transition_duration);
+  @media (min-width: 768px) {
+    @apply h-56 w-full p-8;
+    @apply flex flex-col;
+
+    transition-property: height;
+    transition-duration: var(--navigation_container_transition_duration);
+  }
 }
 .page-container:hover .navigation-container {
-  height: var(--control_container_hover_height);
+  @media (min-width: 768px) {
+    height: var(--control_container_hover_height);
+  }
 }
 
 .expansion-panel-container {
@@ -390,7 +412,7 @@ svg {
 }
 
 .albums-container {
-  @apply grid grid-cols-2 gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8;
 }
 .albums-container .row {
   @apply relative;
@@ -432,9 +454,14 @@ svg {
 }
 
 .background-cover {
-  @apply h-screen w-full;
+  @apply absolute top-0 left-0;
   @apply bg-cover bg-center;
-  filter: blur(12px) grayscale(0.1) brightness(0.8);
-  -webkit-filter: blur(12px) grayscale(0.1) brightness(0.8);
+  @apply h-3/4 w-full;
+
+  @media (min-width: 768px) {
+    @apply h-screen w-full;
+    filter: blur(12px) grayscale(0.1) brightness(0.8);
+    -webkit-filter: blur(12px) grayscale(0.1) brightness(0.8);
+  }
 }
 </style>

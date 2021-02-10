@@ -1,11 +1,13 @@
 <template>
-  <div class="showcase-container">
+  <div v-if="!$parent.is_mobile" class="showcase-container">
     <img :src="$parent.album.cover" alt="cover" />
     <div>
       <h1>{{ $parent.current_track.title }}</h1>
       <h2>
         {{ $parent.current_track.artist
-        }}<span v-show="$parent.album.type != 'mixtape'"> • {{ $parent.album.name }}</span>
+        }}<span v-show="$parent.album.type != 'mixtape'">
+          • {{ $parent.album.name }}</span
+        >
       </h2>
     </div>
     <div class="extra-controls" @click="$parent.openExpansionPanel('albums')">
@@ -34,6 +36,12 @@
       ></path>
     </svg>
   </div>
+  <div v-else class="showcase-container">
+    <h1>{{ $parent.current_track.title }}</h1>
+    <h2>
+      {{ $parent.current_track.artist }}
+    </h2>
+  </div>
 </template>
 
 <script>
@@ -42,44 +50,68 @@ export default {};
 
 <style lang="postcss">
 .showcase-container {
-  @apply h-28 flex;
+  @apply flex flex-col items-center justify-between;
+
+  @media (min-width: 768px) {
+    @apply h-28 flex-row justify-start;
+  }
 }
 .showcase-container * {
-  @apply my-auto;
+  @media (min-width: 768px) {
+    @apply my-auto;
+  }
 }
 .showcase-container img {
-  @apply h-full;
+  @media (min-width: 768px) {
+    @apply h-full;
+  }
 }
 .showcase-container div {
-  @apply ml-4;
+  @media (min-width: 768px) {
+    @apply ml-4;
+  }
 }
 .showcase-container .extra-controls svg {
-  @apply h-8 w-8 ml-4;
+  @media (min-width: 768px) {
+    @apply h-8 w-8 ml-4;
+  }
 }
 .showcase-container > svg {
-  @apply h-10 w-10 ml-8;
-  @apply opacity-60;
+  @media (min-width: 768px) {
+    @apply h-10 w-10 ml-8;
+    @apply opacity-60;
 
-  animation-name: spin;
-  animation-duration: 1.41s;
-  animation-iteration-count: infinite;
+    animation-name: spin;
+    animation-duration: 1.41s;
+    animation-iteration-count: infinite;
+  }
 }
 .showcase-container :nth-child(3n) {
-  @apply ml-auto;
+  @media (min-width: 768px) {
+    @apply ml-auto;
+  }
 }
 .extra-controls {
-  @apply pl-4 py-1 opacity-0 rounded-full;
-  @apply flex items-center;
-  @apply cursor-pointer;
-  transition: opacity 0.2s;
+  @media (min-width: 768px) {
+    @apply pl-4 py-1 opacity-0 rounded-full;
+    @apply flex items-center;
+    @apply cursor-pointer;
+    transition: opacity 0.2s;
+  }
 }
 .extra-controls:hover {
-  background: #00000033;
+  @media (min-width: 768px) {
+    background: #00000033;
+  }
 }
 .extra-controls:active {
-  background: #00000066;
+  @media (min-width: 768px) {
+    background: #00000066;
+  }
 }
 .page-container:hover .extra-controls {
-  @apply opacity-70;
+  @media (min-width: 768px) {
+    @apply opacity-70;
+  }
 }
 </style>
