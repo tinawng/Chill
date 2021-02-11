@@ -50,10 +50,10 @@ export default {};
 
 <style lang="postcss">
 .showcase-container {
-  @apply flex flex-col items-center justify-between;
+  @apply pt-32 flex flex-col items-center justify-between;
 
   @media (min-width: 768px) {
-    @apply h-28 flex-row justify-start;
+    @apply h-28 pt-0 flex-row justify-start;
   }
 }
 .showcase-container * {
@@ -62,9 +62,7 @@ export default {};
   }
 }
 .showcase-container img {
-  @media (min-width: 768px) {
     @apply h-full;
-  }
 }
 .showcase-container div {
   @media (min-width: 768px) {

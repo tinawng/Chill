@@ -9,19 +9,21 @@
       v-if="is_mobile"
       class="absolute top-0 h-1/5 w-full z-10"
       style="
-        background: linear-gradient(0, #ffffff00 10%, var(--color_pallete) 90%);
+        background: linear-gradient(0, #ffffff00 10%, var(--color_pallete) 95%);
       "
     ></div>
     <div
       v-if="is_player_ready"
       class="navigation-container"
-      :style="navigation_container_css_vars + 'background: linear-gradient(180deg, #ffffff00 0%, var(--color_pallete) 25%);'"
+      :style="
+        navigation_container_css_vars +
+        [
+          is_mobile
+            ? 'background: linear-gradient(180deg, #ffffff00 10%, var(--color_pallete) 40%);'
+            : '',
+        ]
+      "
     >
-      <!-- <div
-        v-if="is_mobile"
-        class="h-12 w-full z-10"
-        :style="'background: linear-gradient(180deg, #ffffff00 10%, var(--color_pallete) 90%);'"
-      ></div> -->
       <Showcase ref="showcase-container" />
       <Controls ref="controls-container" />
 
@@ -351,10 +353,10 @@ svg {
 }
 
 .navigation-container {
-  @apply absolute bottom-0 left-0 z-10 h-1/3;
+  @apply absolute bottom-0 left-0 z-10 h-1/2 w-full;
 
   @media (min-width: 768px) {
-    @apply h-56 w-full p-8;
+    @apply h-56 p-8;
     @apply flex flex-col;
 
     transition-property: height;
