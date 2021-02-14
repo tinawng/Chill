@@ -104,54 +104,93 @@
       <line x1="3" y1="18" x2="3.01" y2="18"></line>
     </svg>
   </div>
-  <div v-else class="controls-container">
-    <svg
-      :class="{ 'opacity-30': $parent.current_track.index == 0 }"
-      @click="$parent.previousTrack()"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <polygon points="19 20 9 12 19 4 19 20"></polygon>
-      <line x1="5" y1="19" x2="5" y2="5"></line>
-    </svg>
-    <svg
-      v-if="$parent.player_state != 1"
-      style="padding-left: 0.75rem"
-      @click="$parent.playPause()"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <polygon points="5 3 19 12 5 21 5 3"></polygon>
-    </svg>
-    <svg
-      v-else
-      @click="$parent.playPause()"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.5"
-    >
-      <rect x="6" y="4" width="4" height="16"></rect>
-      <rect x="14" y="4" width="4" height="16"></rect>
-    </svg>
-    <svg
-      @click="$parent.nextTrack()"
-      :class="{
-        'opacity-30':
-          $parent.current_track.index == $parent.album.tracks.length - 1,
-      }"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <polygon points="5 4 15 12 5 20 5 4"></polygon>
-      <line x1="19" y1="5" x2="19" y2="19"></line>
-    </svg>
+
+  <div v-else class="controls-container-mobile">
+    <div class="player-controls">
+      <svg
+        :class="{ 'opacity-30': $parent.current_track.index == 0 }"
+        @click="$parent.previousTrack()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polygon points="19 20 9 12 19 4 19 20"></polygon>
+        <line x1="5" y1="19" x2="5" y2="5"></line>
+      </svg>
+      <svg
+        v-if="$parent.player_state != 1"
+        style="padding-left: 0.75rem"
+        @click="$parent.playPause()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+      </svg>
+      <svg
+        v-else
+        @click="$parent.playPause()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+      >
+        <rect x="6" y="4" width="4" height="16"></rect>
+        <rect x="14" y="4" width="4" height="16"></rect>
+      </svg>
+      <svg
+        @click="$parent.nextTrack()"
+        :class="{
+          'opacity-30':
+            $parent.current_track.index == $parent.album.tracks.length - 1,
+        }"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polygon points="5 4 15 12 5 20 5 4"></polygon>
+        <line x1="19" y1="5" x2="19" y2="19"></line>
+      </svg>
+    </div>
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        <h4>more albums</h4>
+      </div>
+      <div class="flex items-center">
+        <h4>
+          {{ $parent.current_track.index + 1 }} /
+          {{ $parent.album.tracks.length }}
+        </h4>
+        <svg
+          @click="$parent.openExpansionPanel('playlist')"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -161,13 +200,10 @@ export default {};
 
 <style lang="postcss">
 .controls-container {
-  @apply mt-6 flex justify-center items-center;
-
-  @media (min-width: 768px) {
-    @apply justify-start;
-    @apply opacity-0;
-    transition: opacity 0.2s;
-  }
+  @apply mt-6;
+  @apply flex justify-start items-center;
+  @apply opacity-0;
+  transition: opacity 0.2s;
 }
 .page-container:hover .controls-container {
   @apply opacity-100;
@@ -183,24 +219,16 @@ export default {};
   background: #00000066;
 }
 .controls-container svg:first-of-type {
-  @media (min-width: 768px) {
-    @apply h-12 w-12 -ml-2 mr-4;
-  }
+  @apply h-12 w-12 -ml-2 mr-4;
 }
 .controls-container svg:nth-of-type(4n) {
-  @media (min-width: 768px) {
-    @apply ml-4 mr-2;
-  }
+  @apply ml-4 mr-2;
 }
 .controls-container :nth-child(6n) {
-  @media (min-width: 768px) {
-    @apply ml-auto;
-  }
+  @apply ml-auto;
 }
 .controls-container svg:last-of-type {
-  @media (min-width: 768px) {
-    @apply ml-2 -mr-1;
-  }
+  @apply ml-2 -mr-1;
 }
 .controls-container .volume-bar-clickable-container {
   @apply w-28 py-2;
@@ -218,5 +246,20 @@ export default {};
   @apply cursor-pointer;
 
   background: #ffffff66;
+}
+
+.controls-container-mobile {
+  height: inherit;
+  @apply mt-6;
+  @apply flex flex-col justify-between;
+}
+.controls-container-mobile .player-controls {
+  @apply flex justify-center items-center;
+}
+.controls-container-mobile svg {
+  @apply h-10 w-10 p-2 m-2 rounded-full;
+}
+.controls-container-mobile .player-controls svg:nth-of-type(2n) {
+  @apply h-16 w-16;
 }
 </style>
