@@ -29,6 +29,17 @@
 
       <transition name="fade">
         <div v-if="show_expansion_panel" class="expansion-panel-container">
+          <div v-if="is_mobile" class="close-button" @click="show_expansion_panel = false">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
           <div v-if="expansion == 'playlist'" class="playlist-container">
             <div
               v-for="track in album.tracks"
@@ -370,7 +381,18 @@ svg {
 }
 
 .expansion-panel-container {
+  @media (max-width: 768px) {
+    @apply fixed top-0;
+    background: var(--color_pallete);
+  }
+
   @apply h-full mt-4 overflow-y-auto;
+}
+.expansion-panel-container .close-button {
+  @apply fixed top-6 left-2;
+  @apply h-8 w-8 z-20;
+  @apply rounded-full;
+  background: #00000066;
 }
 
 .playlist-container .row {

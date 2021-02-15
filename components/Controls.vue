@@ -155,8 +155,11 @@
         <line x1="19" y1="5" x2="19" y2="19"></line>
       </svg>
     </div>
-    <div class="flex justify-between">
-      <div class="flex items-center">
+    <div class="panel-controls">
+      <div
+        class="flex items-center"
+        @click="$parent.openExpansionPanel('albums')"
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -254,12 +257,19 @@ export default {};
   @apply flex flex-col justify-between;
 }
 .controls-container-mobile .player-controls {
-  @apply flex justify-center items-center;
+  @apply mb-2 flex justify-center items-center;
+  height: -webkit-fill-available;
 }
 .controls-container-mobile svg {
-  @apply h-10 w-10 p-2 m-2 rounded-full;
+  @apply h-12 w-12 p-2 m-2 rounded-full;
 }
 .controls-container-mobile .player-controls svg:nth-of-type(2n) {
-  @apply h-16 w-16;
+  @apply h-18 w-18;
+}
+.controls-container-mobile .panel-controls {
+  @apply flex justify-between;
+}
+.controls-container-mobile .panel-controls svg {
+  @apply h-10 w-10;
 }
 </style>

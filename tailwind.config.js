@@ -6,6 +6,12 @@ module.exports = {
         '2xs': '.7rem',
         '3xs': '.6rem',
       },
+      height: {
+        '18': '4.5rem',
+      },
+      width: {
+        '18': '4.5rem',
+      },
       minWidth: {
         'screen': '100vw'
       }
@@ -13,7 +19,7 @@ module.exports = {
   },
   variants: {
     extend: {
-     height: ['hover']
+      height: ['hover']
     }
   },
   plugins: [],
