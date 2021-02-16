@@ -19,7 +19,7 @@
 
 ☕ ***Chill*** is a small one week project whose goal was to create an ***instant chill*** music player, greatly inspired by Traf's [Sunday.fm](https://sunday.fm/).
 
-I mainly made this website for me, so all the available albums are chosen among my favorites ones 🎵. And *Yes*, I have chosen to stream albums and not 24/7 web radio feed in order to keep a certain consistency among tracks. 
+I first made this website for me, so all the available albums are chosen among my favorites ones 🎵. And *Yes*, I have chosen to stream albums and not 24/7 web radio feed in order to keep a certain consistency among tracks. 
 
 Hope you like it 💖
 
