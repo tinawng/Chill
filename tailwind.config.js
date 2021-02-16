@@ -7,10 +7,10 @@ module.exports = {
         '3xs': '.6rem',
       },
       height: {
-        '18': '4.5rem',
+        '22': '5.5rem',
       },
       width: {
-        '18': '4.5rem',
+        '22': '5.5rem',
       },
       minWidth: {
         'screen': '100vw'

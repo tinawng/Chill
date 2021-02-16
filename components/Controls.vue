@@ -257,19 +257,19 @@ export default {};
   @apply flex flex-col justify-between;
 }
 .controls-container-mobile .player-controls {
-  @apply mb-2 flex justify-center items-center;
+  @apply mb-1 flex justify-center items-center;
   height: -webkit-fill-available;
 }
 .controls-container-mobile svg {
   @apply h-12 w-12 p-2 m-2 rounded-full;
 }
 .controls-container-mobile .player-controls svg:nth-of-type(2n) {
-  @apply h-18 w-18;
+  @apply h-22 w-22;
 }
 .controls-container-mobile .panel-controls {
-  @apply flex justify-between;
+  @apply mb-2 flex justify-between;
 }
 .controls-container-mobile .panel-controls svg {
-  @apply h-10 w-10;
+  @apply h-11 w-11;
 }
 </style>

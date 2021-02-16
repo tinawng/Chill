@@ -37,7 +37,7 @@
     </svg>
   </div>
   <div v-else class="showcase-container">
-    <h1>{{ $parent.current_track.title }}</h1>
+    <h1 class="text-2xl">{{ $parent.current_track.title }}</h1>
     <h2>
       {{ $parent.current_track.artist }}
     </h2>
