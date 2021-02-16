@@ -381,7 +381,7 @@ svg {
 }
 
 .expansion-panel-container {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     @apply fixed top-0;
     background: var(--color_pallete);
   }
