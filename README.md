@@ -23,8 +23,6 @@ I first made this website for me, so all the available albums are chosen among m
 
 Hope you like it 💖
 
-SHORCUTS
-
 *(The player is directly streaming from Youtube via a hidden youtube embed player. Nothing is stored on the web server)*
 
 # Live
@@ -38,7 +36,7 @@ Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 - 💿 Hand picked album selection
 - 📱 Mobile compatible
 - 💨 Super lightweight (html+css+js < 100kB)
-- ⌨️ Keyboard shortcuts (same as Youtube)
+- ⌨️ Keyboard shortcuts (same ones as Youtube)
 
 # Stack
 
