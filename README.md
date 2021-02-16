@@ -51,6 +51,9 @@ Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 - ~~Prevent screen sleep~~
 - ~~Dedicated mobile UI design~~
 
+### Albums picker
+- Genre separation
+
 # Links
 
 - 🏗️ Nuxt.js: *[https://nuxtjs.org](https://nuxtjs.org/)*
