@@ -17,9 +17,9 @@
 
 # Infos
 
-☕ ***Chill*** is a small one week project whose goal was to create an ***instant chill*** music player, grealty inspire from Traf's [Sunday.fm](https://sunday.fm/).
+☕ ***Chill*** is a small one week project whose goal was to create an ***instant chill*** music player, greatly inspired from Traf's [Sunday.fm](https://sunday.fm/).
 
-I mainly made this website for me, so all the available albums are chosen among my favorites ones. And *Yes*, I have chosen to stream albums and not 24/7 web radio feed in order to keep a certain consistency among tracks. 
+I mainly made this website for me, so all the available albums are chosen among my favorites ones 🎵. And *Yes*, I have chosen to stream albums and not 24/7 web radio feed in order to keep a certain consistency among tracks. 
 
 Hope you like it 💖
 
@@ -27,8 +27,8 @@ Hope you like it 💖
 
 # Live
 
-## 🔗 ***[chill.tina.cafe](http://chill.tina.cafe/)***
-Served using *[💨 Yeetify](https://github.com/tinawng/yeetify)*
+### 🔗 ***[chill.tina.cafe](http://chill.tina.cafe/)***
+Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 
 # Features
 - ✨ Clean & minimalist player design
@@ -64,8 +64,8 @@ Served using *[💨 Yeetify](https://github.com/tinawng/yeetify)*
 $ yarn install
 
 # dev server with hot reload
-$ npm run dev
+$ yarn run dev
 
 # build for production
-$ npm run generate
+$ yarn run generate
 ```
