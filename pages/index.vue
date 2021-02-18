@@ -50,7 +50,7 @@
             >
               <h3>{{ track.title }}</h3>
               <h3>{{ track.artist }}</h3>
-              <h3>{{ album.name }}</h3>
+              <h3 v-if="!is_mobile" >{{ album.name }}</h3>
               <h3>{{ formatTrackDuration(track.duration) }}</h3>
             </div>
           </div>
@@ -396,7 +396,7 @@ svg {
 }
 
 .playlist-container .row {
-  @apply h-16 px-8;
+  @apply h-16 pl-6 pr-4 md:px-8;
   @apply border-b;
   border-color: #ffffff22;
   @apply flex items-center;
@@ -426,7 +426,7 @@ svg {
   @apply opacity-100 w-1/2;
 }
 .playlist-container .row h3:nth-of-type(2n) {
-  @apply w-1/3;
+  @apply w-1/3 text-center md:text-left;
 }
 .playlist-container .row h3:nth-of-type(3n) {
   @apply w-1/4;
