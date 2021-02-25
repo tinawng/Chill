@@ -277,15 +277,15 @@ export default {};
   height: -webkit-fill-available;
 }
 .controls-container-mobile svg {
-  @apply h-12 w-12 p-2 m-2 rounded-full;
+  @apply h-11 w-11 p-2 m-2 rounded-full;
 }
 .controls-container-mobile .player-controls svg:nth-of-type(2n) {
-  @apply h-22 w-22;
+  @apply h-20 w-20;
 }
 .controls-container-mobile .panel-controls {
   @apply mb-2 flex justify-between;
 }
 .controls-container-mobile .panel-controls svg {
-  @apply h-11 w-11;
+  @apply h-10 w-10;
 }
 </style>

@@ -386,7 +386,7 @@ svg {
     background: var(--color_pallete);
   }
 
-  @apply h-full mt-4 overflow-y-auto;
+  @apply h-full w-full mt-4 overflow-y-auto;
 }
 .expansion-panel-container .close-button {
   @apply fixed top-6 left-2;
@@ -436,7 +436,13 @@ svg {
 }
 
 .albums-container {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8;
+  @apply mx-4 md:mx-0 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8;
+}
+.albums-container h1 {
+  @apply text-base;
+}
+.albums-container h2 {
+  @apply text-sm;
 }
 .albums-container .row {
   @apply relative;
@@ -457,7 +463,8 @@ svg {
   @apply text-right;
 }
 .albums-container .row .cover {
-  @apply h-36 w-36;
+  @apply h-28 md:h-36 w-28 md:w-36;
+  @apply flex-shrink-0;
   @apply bg-cover bg-center;
 }
 .albums-container .row .background {
