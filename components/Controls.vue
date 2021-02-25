@@ -8,6 +8,8 @@
       fill="none"
       stroke="currentColor"
       stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <polygon points="5 3 19 12 5 21 5 3"></polygon>
     </svg>
@@ -18,6 +20,8 @@
       fill="none"
       stroke="currentColor"
       stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <rect x="6" y="4" width="4" height="16"></rect>
       <rect x="14" y="4" width="4" height="16"></rect>
@@ -29,6 +33,8 @@
       fill="none"
       stroke="currentColor"
       stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <polygon points="19 20 9 12 19 4 19 20"></polygon>
       <line x1="5" y1="19" x2="5" y2="5"></line>
@@ -43,6 +49,8 @@
       fill="none"
       stroke="currentColor"
       stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <polygon points="5 4 15 12 5 20 5 4"></polygon>
       <line x1="19" y1="5" x2="19" y2="19"></line>
@@ -114,6 +122,8 @@
         fill="none"
         stroke="currentColor"
         stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
         <polygon points="19 20 9 12 19 4 19 20"></polygon>
         <line x1="5" y1="19" x2="5" y2="5"></line>
@@ -126,6 +136,8 @@
         fill="none"
         stroke="currentColor"
         stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
         <polygon points="5 3 19 12 5 21 5 3"></polygon>
       </svg>
@@ -136,6 +148,8 @@
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
         <rect x="6" y="4" width="4" height="16"></rect>
         <rect x="14" y="4" width="4" height="16"></rect>
@@ -150,6 +164,8 @@
         fill="none"
         stroke="currentColor"
         stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
         <polygon points="5 4 15 12 5 20 5 4"></polygon>
         <line x1="19" y1="5" x2="19" y2="19"></line>
