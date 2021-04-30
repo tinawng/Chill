@@ -49,11 +49,11 @@ Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 # Next
 
 ### Mobile compatibility
-- ~~Prevent screen sleep~~
-- ~~Dedicated mobile UI design~~
+- [x] Prevent screen sleep
+- [x] Dedicated mobile UI design
 
 ### Albums picker
-- Genre separation
+- [ ] Genre separation
 
 # Links
 
