@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import { getPaletteFromURL } from 'color-thief-node';
 import raw_albums from "~/assets/data/albums.json";
 

@@ -28,13 +28,12 @@ Hope you like it 💖
 # Live
 
 ### 🔗 ***[chill.tina.cafe](http://chill.tina.cafe/)***
-Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 
 # Features
 - ✨ Clean & minimalist player design
 - ➰ Never ending music flow
 - 💿 Hand picked album selection
-- 📱 Mobile compatible
+- 📱 Responsive design
 - 💨 Super lightweight (html+css+js < 100kB)
 - ⌨️ Keyboard shortcuts (same ones as Youtube)
 
@@ -65,11 +64,11 @@ Served using *[Yeetify 💨](https://github.com/tinawng/yeetify)*
 
 ```bash
 # install dependencies
-$ yarn install
+$ bun install
 
 # dev server with hot reload
-$ yarn run dev
+$ bun dev
 
 # build for production
-$ yarn run generate
+$ bun run generate
 ```

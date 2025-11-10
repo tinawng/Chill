@@ -1,5 +1,4 @@
-module.exports = {
-  darkMode: false,
+export default {
   theme: {
     extend: {
       fontSize: {

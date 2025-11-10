@@ -1,105 +1,1744 @@
 [
   {
-    "type": "album",
-    "youtube_id": "_tV5LEBDs7w",
-    "cover": "https://f4.bcbits.com/img/a0953413770_10.jpg",
-    "name": "Cozy Winter"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Cozy Winter",
+     "youtube_id":"_tV5LEBDs7w",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa0953413770_10.jpg",
+     "duration":4681,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"Team Astro",
+           "title":"Over The Moon",
+           "index":0,
+           "duration":173
+        },
+        {
+           "time_stamp":173,
+           "artist":"Hoogway",
+           "title":"After You",
+           "index":1,
+           "duration":139
+        },
+        {
+           "time_stamp":312,
+           "artist":"Purrple Cat",
+           "title":"Moonlit Walk",
+           "index":2,
+           "duration":210
+        },
+        {
+           "time_stamp":522,
+           "artist":"Enluv x E I S U",
+           "title":"Fjallstoppur",
+           "index":3,
+           "duration":126
+        },
+        {
+           "time_stamp":648,
+           "artist":"squeeda",
+           "title":"Vulnerable",
+           "index":4,
+           "duration":176
+        },
+        {
+           "time_stamp":824,
+           "artist":"Towerz x farewell",
+           "title":"Sparkler",
+           "index":5,
+           "duration":158
+        },
+        {
+           "time_stamp":982,
+           "artist":"Jhove",
+           "title":"Night Lamp",
+           "index":6,
+           "duration":130
+        },
+        {
+           "time_stamp":1112,
+           "artist":"cxlt.",
+           "title":"Overthinking",
+           "index":7,
+           "duration":152
+        },
+        {
+           "time_stamp":1264,
+           "artist":"Elior",
+           "title":"Soaring",
+           "index":8,
+           "duration":160
+        },
+        {
+           "time_stamp":1424,
+           "artist":"xander.",
+           "title":"Rain Come Again",
+           "index":9,
+           "duration":183
+        },
+        {
+           "time_stamp":1607,
+           "artist":"G Mills x aimless",
+           "title":"Drifting",
+           "index":10,
+           "duration":128
+        },
+        {
+           "time_stamp":1735,
+           "artist":"WYS",
+           "title":"San Fransisco",
+           "index":11,
+           "duration":141
+        },
+        {
+           "time_stamp":1876,
+           "artist":"Lofty x Pointy Features x Quist",
+           "title":"Loves Dissonance",
+           "index":12,
+           "duration":160
+        },
+        {
+           "time_stamp":2036,
+           "artist":"Monma x cocabona",
+           "title":"Tetra",
+           "index":13,
+           "duration":191
+        },
+        {
+           "time_stamp":2227,
+           "artist":"aimless x soho",
+           "title":"Every Second",
+           "index":14,
+           "duration":165
+        },
+        {
+           "time_stamp":2392,
+           "artist":"Glimlip",
+           "title":"Ebs and Flows",
+           "index":15,
+           "duration":99
+        },
+        {
+           "time_stamp":2491,
+           "artist":"TABAL x eaup",
+           "title":"Days Will Pass",
+           "index":16,
+           "duration":120
+        },
+        {
+           "time_stamp":2611,
+           "artist":"Ambulo",
+           "title":"Serene",
+           "index":17,
+           "duration":128
+        },
+        {
+           "time_stamp":2739,
+           "artist":"Sleepermane x Sling Dilly",
+           "title":"Inside Out",
+           "index":18,
+           "duration":124
+        },
+        {
+           "time_stamp":2863,
+           "artist":"Otaam x squeeda",
+           "title":"Dreaming of Snow",
+           "index":19,
+           "duration":116
+        },
+        {
+           "time_stamp":2979,
+           "artist":"eaup x Elior",
+           "title":"Floating",
+           "index":20,
+           "duration":145
+        },
+        {
+           "time_stamp":3124,
+           "artist":"Bert x Nerok",
+           "title":"Campfire",
+           "index":21,
+           "duration":132
+        },
+        {
+           "time_stamp":3256,
+           "artist":"azula x iamalex x Dillan Witherow",
+           "title":"Hammock",
+           "index":22,
+           "duration":130
+        },
+        {
+           "time_stamp":3386,
+           "artist":"Anbuu x Blue Wednesday",
+           "title":"Sixth Station",
+           "index":23,
+           "duration":162
+        },
+        {
+           "time_stamp":3548,
+           "artist":"tysu x Spencer Hunt",
+           "title":"Heated Blanket",
+           "index":24,
+           "duration":144
+        },
+        {
+           "time_stamp":3692,
+           "artist":"Kainbeats x S N U G",
+           "title":"Formless",
+           "index":25,
+           "duration":150
+        },
+        {
+           "time_stamp":3842,
+           "artist":"Chiccote’s Beats x Pueblo Vista",
+           "title":"Counting Stars",
+           "index":26,
+           "duration":125
+        },
+        {
+           "time_stamp":3967,
+           "artist":"Towerz x Hoogway",
+           "title":"Moonfall",
+           "index":27,
+           "duration":151
+        },
+        {
+           "time_stamp":4118,
+           "artist":"fourwalls",
+           "title":"Waves",
+           "index":28,
+           "duration":123
+        },
+        {
+           "time_stamp":4241,
+           "artist":"Celestial Alignment",
+           "title":"A Roomful of Memories and Longing",
+           "index":29,
+           "duration":130
+        },
+        {
+           "time_stamp":4371,
+           "artist":"Mondo Loops",
+           "title":"Always Drifting",
+           "index":30,
+           "duration":159
+        },
+        {
+           "time_stamp":4530,
+           "artist":"Laffey",
+           "title":"As The Sun Sets",
+           "index":31,
+           "duration":151
+        }
+     ],
+     "color_pallete":[
+        "#512f38",
+        "#cdbaba",
+        "#a06b63",
+        "#afafba",
+        "#9e92a8"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "BTYAsjAVa3I",
-    "cover": "https://f4.bcbits.com/img/a1435058381_10.jpg",
-    "name": "3 A.M Study Session"
+     "type":"album",
+     "genre":"undefined",
+     "name":"3 A.M Study Session",
+     "youtube_id":"BTYAsjAVa3I",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa1435058381_10.jpg",
+     "duration":3604,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"No Spirit",
+           "title":"Glowing Lights",
+           "index":0,
+           "duration":165
+        },
+        {
+           "time_stamp":165,
+           "artist":"dryhope",
+           "title":"somewhere else",
+           "index":1,
+           "duration":155
+        },
+        {
+           "time_stamp":320,
+           "artist":"Eisu",
+           "title":"Sheets",
+           "index":2,
+           "duration":113
+        },
+        {
+           "time_stamp":433,
+           "artist":"Casiio x Sleepermane",
+           "title":"Phantasm",
+           "index":3,
+           "duration":120
+        },
+        {
+           "time_stamp":553,
+           "artist":"Project AER x WYS",
+           "title":"After Sunset",
+           "index":4,
+           "duration":156
+        },
+        {
+           "time_stamp":709,
+           "artist":"Tenno",
+           "title":"Luna",
+           "index":5,
+           "duration":151
+        },
+        {
+           "time_stamp":860,
+           "artist":"Sebastian Kamae x Intoku",
+           "title":"Lucid",
+           "index":6,
+           "duration":129
+        },
+        {
+           "time_stamp":989,
+           "artist":"Epektase x j'san",
+           "title":"Contemplation",
+           "index":7,
+           "duration":193
+        },
+        {
+           "time_stamp":1182,
+           "artist":"Casiio x Sleepermane",
+           "title":"Signals",
+           "index":8,
+           "duration":104
+        },
+        {
+           "time_stamp":1286,
+           "artist":"Phlocalyst x Living Room",
+           "title":"Feelings",
+           "index":9,
+           "duration":141
+        },
+        {
+           "time_stamp":1427,
+           "artist":"Pandrezz",
+           "title":"Blind Forest",
+           "index":10,
+           "duration":168
+        },
+        {
+           "time_stamp":1595,
+           "artist":"SwuM x chief.",
+           "title":"Show me How",
+           "index":11,
+           "duration":162
+        },
+        {
+           "time_stamp":1757,
+           "artist":"Comodo",
+           "title":"Numb",
+           "index":12,
+           "duration":199
+        },
+        {
+           "time_stamp":1956,
+           "artist":"TABAL x mell-ø",
+           "title":"Weightless",
+           "index":13,
+           "duration":133
+        },
+        {
+           "time_stamp":2089,
+           "artist":"Ambulo",
+           "title":"Night Bus",
+           "index":14,
+           "duration":134
+        },
+        {
+           "time_stamp":2223,
+           "artist":"Kanisan x Frad",
+           "title":"Fireflies",
+           "index":15,
+           "duration":122
+        },
+        {
+           "time_stamp":2345,
+           "artist":"H.1",
+           "title":"Timeless",
+           "index":16,
+           "duration":126
+        },
+        {
+           "time_stamp":2471,
+           "artist":"Yasumu",
+           "title":"Recharge",
+           "index":17,
+           "duration":139
+        },
+        {
+           "time_stamp":2610,
+           "artist":"cxlt.",
+           "title":"Fade Away",
+           "index":18,
+           "duration":160
+        },
+        {
+           "time_stamp":2770,
+           "artist":"Mondo Loops x Kanisan",
+           "title":"Escape Route",
+           "index":19,
+           "duration":125
+        },
+        {
+           "time_stamp":2895,
+           "artist":"towerz",
+           "title":"fateful slumber",
+           "index":20,
+           "duration":164
+        },
+        {
+           "time_stamp":3059,
+           "artist":"brillion.",
+           "title":"Crescent",
+           "index":21,
+           "duration":203
+        },
+        {
+           "time_stamp":3262,
+           "artist":"less.people",
+           "title":"persist",
+           "index":22,
+           "duration":179
+        },
+        {
+           "time_stamp":3441,
+           "artist":"Mondo Loops",
+           "title":"Drifting Far Away",
+           "index":23,
+           "duration":163
+        }
+     ],
+     "color_pallete":[
+        "#da5a64",
+        "#341f30",
+        "#83424b",
+        "#81aba6",
+        "#7f7ca1"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "YeSeTwBcwYQ",
-    "cover": "https://f4.bcbits.com/img/a3971371715_10.jpg",
-    "name": "Directions"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Directions",
+     "youtube_id":"YeSeTwBcwYQ",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa3971371715_10.jpg",
+     "duration":1271,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Flashback",
+           "index":0,
+           "duration":225
+        },
+        {
+           "time_stamp":225,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Toofpick",
+           "index":1,
+           "duration":138
+        },
+        {
+           "time_stamp":363,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Déjà Vu",
+           "index":2,
+           "duration":235
+        },
+        {
+           "time_stamp":598,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Day One",
+           "index":3,
+           "duration":158
+        },
+        {
+           "time_stamp":756,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Home Court",
+           "index":4,
+           "duration":173
+        },
+        {
+           "time_stamp":929,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Bloom",
+           "index":5,
+           "duration":185
+        },
+        {
+           "time_stamp":1114,
+           "artist":"Blue Wednesday, Shopan",
+           "title":"Murmuration",
+           "index":6,
+           "duration":157
+        }
+     ],
+     "color_pallete":[
+        "#59507b",
+        "#c8a3ca",
+        "#9592cc",
+        "#0f0d22",
+        "#a5acdd"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "JfPx2Pf9wQM",
-    "cover": "https://f4.bcbits.com/img/a2853991834_10.jpg",
-    "name": "Second Wind",
-    "artist": "L'indécis"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Daydreams",
+     "youtube_id":"kEPakJDkTOk",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa2897967570_10.jpg",
+     "duration":2331,
+     "tracks":[
+        {
+           "time_stamp":2,
+           "artist":"Sugi.wa",
+           "title":"almost home",
+           "index":0,
+           "duration":169
+        },
+        {
+           "time_stamp":171,
+           "artist":"Chief.",
+           "title":"yesterday",
+           "index":1,
+           "duration":154
+        },
+        {
+           "time_stamp":325,
+           "artist":"Sad toï",
+           "title":"jeux d’eau",
+           "index":2,
+           "duration":147
+        },
+        {
+           "time_stamp":472,
+           "artist":"Clap cotton",
+           "title":"duchess",
+           "index":3,
+           "duration":98
+        },
+        {
+           "time_stamp":570,
+           "artist":"Delayde",
+           "title":"teleshopping",
+           "index":4,
+           "duration":104
+        },
+        {
+           "time_stamp":674,
+           "artist":"barnes blvd",
+           "title":"perspective",
+           "index":5,
+           "duration":100
+        },
+        {
+           "time_stamp":774,
+           "artist":"Smoke Trees",
+           "title":"takondwa",
+           "index":6,
+           "duration":126
+        },
+        {
+           "time_stamp":900,
+           "artist":"Monma",
+           "title":"Ooohwee",
+           "index":7,
+           "duration":92
+        },
+        {
+           "time_stamp":992,
+           "artist":"invention_",
+           "title":"dxy_drmng",
+           "index":8,
+           "duration":165
+        },
+        {
+           "time_stamp":1157,
+           "artist":"leavv",
+           "title":"Hello Friend",
+           "index":9,
+           "duration":125
+        },
+        {
+           "time_stamp":1282,
+           "artist":"masked man",
+           "title":"coupe_90",
+           "index":10,
+           "duration":68
+        },
+        {
+           "time_stamp":1350,
+           "artist":"Omaure",
+           "title":"down under",
+           "index":11,
+           "duration":107
+        },
+        {
+           "time_stamp":1457,
+           "artist":"Flitz & Suppe",
+           "title":"About the Distance",
+           "index":12,
+           "duration":153
+        },
+        {
+           "time_stamp":1610,
+           "artist":"Kendall Miles",
+           "title":"Savannah",
+           "index":13,
+           "duration":76
+        },
+        {
+           "time_stamp":1686,
+           "artist":"less.people",
+           "title":"you’ve got nothing (but time)",
+           "index":14,
+           "duration":153
+        },
+        {
+           "time_stamp":1839,
+           "artist":"dotlights",
+           "title":"life inside a nightmare rectangle",
+           "index":15,
+           "duration":163
+        },
+        {
+           "time_stamp":2002,
+           "artist":"Arbour X Underbelly",
+           "title":"borren",
+           "index":16,
+           "duration":172
+        },
+        {
+           "time_stamp":2174,
+           "artist":"hm surf",
+           "title":"couch day",
+           "index":17,
+           "duration":157
+        }
+     ],
+     "color_pallete":[
+        "#cfaf7e",
+        "#be310c",
+        "#e26d2e",
+        "#9f7445",
+        "#faf0d3"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "kEPakJDkTOk",
-    "cover": "https://f4.bcbits.com/img/a2897967570_10.jpg",
-    "name": "Daydreams"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Daydreams 2",
+     "youtube_id":"SMgWHnDMHvU",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa1481913890_10.jpg",
+     "duration":3695,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"Philanthrope x sleepy fish",
+           "title":"Space Cadet",
+           "index":0,
+           "duration":142
+        },
+        {
+           "time_stamp":142,
+           "artist":"dryhope",
+           "title":"Lake",
+           "index":1,
+           "duration":143
+        },
+        {
+           "time_stamp":285,
+           "artist":"C4C x Leavv",
+           "title":"Companion",
+           "index":2,
+           "duration":150
+        },
+        {
+           "time_stamp":435,
+           "artist":"G Mills",
+           "title":"Iridescence",
+           "index":3,
+           "duration":171
+        },
+        {
+           "time_stamp":606,
+           "artist":"Dr. Dundiff",
+           "title":"Seven",
+           "index":4,
+           "duration":130
+        },
+        {
+           "time_stamp":736,
+           "artist":"chief.",
+           "title":"Morning Walk",
+           "index":5,
+           "duration":146
+        },
+        {
+           "time_stamp":882,
+           "artist":"Tom Doolie",
+           "title":"Aeroplane",
+           "index":6,
+           "duration":106
+        },
+        {
+           "time_stamp":988,
+           "artist":"Flovry",
+           "title":"Birdbath",
+           "index":7,
+           "duration":169
+        },
+        {
+           "time_stamp":1157,
+           "artist":"Ian Ewing",
+           "title":"Smthn Bout U",
+           "index":8,
+           "duration":181
+        },
+        {
+           "time_stamp":1338,
+           "artist":"Pandrezz x Kyle McEvoy",
+           "title":"Half Asleep",
+           "index":9,
+           "duration":108
+        },
+        {
+           "time_stamp":1446,
+           "artist":"j'san. x Epektase",
+           "title":"Skydive",
+           "index":10,
+           "duration":168
+        },
+        {
+           "time_stamp":1614,
+           "artist":"Yasper",
+           "title":"In My Cabin",
+           "index":11,
+           "duration":152
+        },
+        {
+           "time_stamp":1766,
+           "artist":"Nokiaa x nofeels",
+           "title":"Ful Off",
+           "index":12,
+           "duration":126
+        },
+        {
+           "time_stamp":1892,
+           "artist":"B-Side",
+           "title":"Never Forget",
+           "index":13,
+           "duration":165
+        },
+        {
+           "time_stamp":2057,
+           "artist":"Sofasound",
+           "title":"Hurt Heal",
+           "index":14,
+           "duration":168
+        },
+        {
+           "time_stamp":2225,
+           "artist":"Miscél",
+           "title":"Remember",
+           "index":15,
+           "duration":106
+        },
+        {
+           "time_stamp":2331,
+           "artist":"fantompower x barnes blvd.",
+           "title":"Pastel Plains",
+           "index":16,
+           "duration":181
+        },
+        {
+           "time_stamp":2512,
+           "artist":"idealism x Philanthrope",
+           "title":"Still",
+           "index":17,
+           "duration":214
+        },
+        {
+           "time_stamp":2726,
+           "artist":"cocabona x Monma",
+           "title":"Sleepy",
+           "index":18,
+           "duration":138
+        },
+        {
+           "time_stamp":2864,
+           "artist":"sugi.wa",
+           "title":"Changing Lanes",
+           "index":19,
+           "duration":139
+        },
+        {
+           "time_stamp":3003,
+           "artist":"Psalm Trees",
+           "title":"Lazy French Beagles (ft. Guillaume Muschalle)",
+           "index":20,
+           "duration":169
+        },
+        {
+           "time_stamp":3172,
+           "artist":"HM Surf",
+           "title":"Apple Flower",
+           "index":21,
+           "duration":110
+        },
+        {
+           "time_stamp":3282,
+           "artist":"Allem Iversom",
+           "title":"Awake",
+           "index":22,
+           "duration":179
+        },
+        {
+           "time_stamp":3461,
+           "artist":"auv",
+           "title":"Lower East Late Summer",
+           "index":23,
+           "duration":234
+        }
+     ],
+     "color_pallete":[
+        "#d3c0a2",
+        "#d83e15",
+        "#314f58",
+        "#738790",
+        "#f37933"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "SMgWHnDMHvU",
-    "cover": "https://f4.bcbits.com/img/a1481913890_10.jpg",
-    "name": "Daydreams 2"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Chillhop Essentials Spring 2019",
+     "youtube_id":"QB-fo_bGnQs",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa0925315459_10.jpg",
+     "duration":4124,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"Blue Wednesday",
+           "title":"Murmuration ft. Shopan",
+           "index":0,
+           "duration":156
+        },
+        {
+           "time_stamp":156,
+           "artist":"Cloudchord x G Mills",
+           "title":"Sunlit",
+           "index":1,
+           "duration":184
+        },
+        {
+           "time_stamp":340,
+           "artist":"plusma",
+           "title":"Marmots Dance",
+           "index":2,
+           "duration":145
+        },
+        {
+           "time_stamp":485,
+           "artist":"masked man",
+           "title":"Ish Happens",
+           "index":3,
+           "duration":84
+        },
+        {
+           "time_stamp":569,
+           "artist":"santpoort",
+           "title":"Rosemary Whispers",
+           "index":4,
+           "duration":136
+        },
+        {
+           "time_stamp":705,
+           "artist":"Aso",
+           "title":"Sunsets",
+           "index":5,
+           "duration":178
+        },
+        {
+           "time_stamp":883,
+           "artist":"oddfish",
+           "title":"Hazy...",
+           "index":6,
+           "duration":192
+        },
+        {
+           "time_stamp":1075,
+           "artist":"Nokiaa",
+           "title":"Blending In",
+           "index":7,
+           "duration":111
+        },
+        {
+           "time_stamp":1186,
+           "artist":"Moods x Philanthrope x Yasper",
+           "title":"Bucket List",
+           "index":8,
+           "duration":133
+        },
+        {
+           "time_stamp":1319,
+           "artist":"H.1 x stream_error",
+           "title":"City Lights",
+           "index":9,
+           "duration":155
+        },
+        {
+           "time_stamp":1474,
+           "artist":"Eli Way",
+           "title":"Daydream",
+           "index":10,
+           "duration":224
+        },
+        {
+           "time_stamp":1698,
+           "artist":"Flitz&Suppe x Gas-Lab",
+           "title":"Slice of Life",
+           "index":11,
+           "duration":160
+        },
+        {
+           "time_stamp":1858,
+           "artist":"Psalm Trees",
+           "title":"Meadows ft. Guillaume Muschalle",
+           "index":12,
+           "duration":150
+        },
+        {
+           "time_stamp":2008,
+           "artist":"SAINT WKND x No Spirit",
+           "title":"Changed My Mind",
+           "index":13,
+           "duration":260
+        },
+        {
+           "time_stamp":2268,
+           "artist":"B-Side x Yasper x Philanthrope",
+           "title":"Last Snow",
+           "index":14,
+           "duration":168
+        },
+        {
+           "time_stamp":2436,
+           "artist":"Strehlow",
+           "title":"Poke Date ft. Ian Ewing",
+           "index":15,
+           "duration":131
+        },
+        {
+           "time_stamp":2567,
+           "artist":"invention_",
+           "title":"Levitating",
+           "index":16,
+           "duration":179
+        },
+        {
+           "time_stamp":2746,
+           "artist":"Vhsceral",
+           "title":"Alamein",
+           "index":17,
+           "duration":158
+        },
+        {
+           "time_stamp":2904,
+           "artist":"weird inside",
+           "title":"Sinkerator ft. quickly, quickly & Dilip",
+           "index":18,
+           "duration":138
+        },
+        {
+           "time_stamp":3042,
+           "artist":"Ian Ewing",
+           "title":"leaving",
+           "index":19,
+           "duration":202
+        },
+        {
+           "time_stamp":3244,
+           "artist":"Flovry",
+           "title":"Laze",
+           "index":20,
+           "duration":98
+        },
+        {
+           "time_stamp":3342,
+           "artist":"cocabona, Monma",
+           "title":"Pyra",
+           "index":21,
+           "duration":172
+        },
+        {
+           "time_stamp":3514,
+           "artist":"fantompower",
+           "title":"Morning Dew",
+           "index":22,
+           "duration":151
+        },
+        {
+           "time_stamp":3665,
+           "artist":"sleepy fish",
+           "title":"I Wish It Would Never Stop Snowing",
+           "index":23,
+           "duration":197
+        },
+        {
+           "time_stamp":3862,
+           "artist":"harris Cole",
+           "title":"Birds",
+           "index":24,
+           "duration":262
+        }
+     ],
+     "color_pallete":[
+        "#25626a",
+        "#d2bda4",
+        "#68bcb3",
+        "#2c2a32",
+        "#11a5bf"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "QB-fo_bGnQs",
-    "cover": "https://f4.bcbits.com/img/a0925315459_10.jpg",
-    "name": "Chillhop Essentials Spring 2019"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Chillhop Essentials Summer 2019",
+     "youtube_id":"n5uz7egB9tA",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa2697384601_10.jpg",
+     "duration":3874,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"Yasper",
+           "title":"Good Friends",
+           "index":0,
+           "duration":160
+        },
+        {
+           "time_stamp":160,
+           "artist":"sleepy fish",
+           "title":"for when it's warmer",
+           "index":1,
+           "duration":216
+        },
+        {
+           "time_stamp":376,
+           "artist":"Dontcry & Nokiaa & Deauxnuts & Azec",
+           "title":"Wavey",
+           "index":2,
+           "duration":159
+        },
+        {
+           "time_stamp":535,
+           "artist":"Toonorth",
+           "title":"Iced Tea",
+           "index":3,
+           "duration":168
+        },
+        {
+           "time_stamp":703,
+           "artist":"chief.",
+           "title":"be here now",
+           "index":4,
+           "duration":130
+        },
+        {
+           "time_stamp":833,
+           "artist":"clap cotton",
+           "title":"understatements",
+           "index":5,
+           "duration":108
+        },
+        {
+           "time_stamp":941,
+           "artist":"auv",
+           "title":"McCarren",
+           "index":6,
+           "duration":195
+        },
+        {
+           "time_stamp":1136,
+           "artist":"Evil Needle",
+           "title":"Candlelight",
+           "index":7,
+           "duration":164
+        },
+        {
+           "time_stamp":1300,
+           "artist":"Misha x cocabona",
+           "title":"Khaleesi",
+           "index":8,
+           "duration":212
+        },
+        {
+           "time_stamp":1512,
+           "artist":"quickly, quickly x Louk",
+           "title":"Sleeping Til 12",
+           "index":9,
+           "duration":104
+        },
+        {
+           "time_stamp":1616,
+           "artist":"FABICH x NO SPIRIT",
+           "title":"All Together Good Vibes",
+           "index":10,
+           "duration":142
+        },
+        {
+           "time_stamp":1758,
+           "artist":"blnkspc_",
+           "title":"tonite",
+           "index":11,
+           "duration":158
+        },
+        {
+           "time_stamp":1916,
+           "artist":"junior state",
+           "title":"Nice and Easy",
+           "index":12,
+           "duration":164
+        },
+        {
+           "time_stamp":2080,
+           "artist":"Ruck P",
+           "title":"Early Morning",
+           "index":13,
+           "duration":217
+        },
+        {
+           "time_stamp":2297,
+           "artist":"Cap Kendricks",
+           "title":"It's a Vibe",
+           "index":14,
+           "duration":114
+        },
+        {
+           "time_stamp":2411,
+           "artist":"Monma",
+           "title":"Fast Travel",
+           "index":15,
+           "duration":123
+        },
+        {
+           "time_stamp":2534,
+           "artist":"SAINT WKND x NO SPIRIT",
+           "title":"Sand Under My Feet",
+           "index":16,
+           "duration":231
+        },
+        {
+           "time_stamp":2765,
+           "artist":"Osvaldo",
+           "title":"Supergloom",
+           "index":17,
+           "duration":126
+        },
+        {
+           "time_stamp":2891,
+           "artist":"Stan Forebee x Cloudchord",
+           "title":"Song For The Sun",
+           "index":18,
+           "duration":199
+        },
+        {
+           "time_stamp":3090,
+           "artist":"sebastian kamae & dontcry",
+           "title":"polaroid",
+           "index":19,
+           "duration":154
+        },
+        {
+           "time_stamp":3244,
+           "artist":"Hanz",
+           "title":"Pulse",
+           "index":20,
+           "duration":159
+        },
+        {
+           "time_stamp":3403,
+           "artist":"middle school",
+           "title":"wannabe ft. aso",
+           "index":21,
+           "duration":141
+        },
+        {
+           "time_stamp":3544,
+           "artist":"leavv",
+           "title":"Driftwood",
+           "index":22,
+           "duration":163
+        },
+        {
+           "time_stamp":3707,
+           "artist":"Blue Wednesday",
+           "title":"Birthday Girl",
+           "index":23,
+           "duration":167
+        }
+     ],
+     "color_pallete":[
+        "#50404a",
+        "#da8669",
+        "#6db5bd",
+        "#9f5d5c",
+        "#6190b3"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "n5uz7egB9tA",
-    "cover": "https://f4.bcbits.com/img/a2697384601_10.jpg",
-    "name": "Chillhop Essentials Summer 2019"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Chillhop Essentials Fall 2019",
+     "youtube_id":"vw3iCuCRm0Q",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa2417999185_10.jpg",
+     "duration":4003,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"middle school x Aso",
+           "title":"Cypress",
+           "index":0,
+           "duration":210
+        },
+        {
+           "time_stamp":210,
+           "artist":"Shopan",
+           "title":"Woodnot",
+           "index":1,
+           "duration":212
+        },
+        {
+           "time_stamp":422,
+           "artist":"chromonicci",
+           "title":"Memories.",
+           "index":2,
+           "duration":186
+        },
+        {
+           "time_stamp":608,
+           "artist":"Yasper",
+           "title":"Move Together",
+           "index":3,
+           "duration":202
+        },
+        {
+           "time_stamp":810,
+           "artist":"Fenick x Delayde",
+           "title":"Longwayhome",
+           "index":4,
+           "duration":129
+        },
+        {
+           "time_stamp":939,
+           "artist":"auv",
+           "title":"Rockaway 5pm",
+           "index":5,
+           "duration":165
+        },
+        {
+           "time_stamp":1104,
+           "artist":"sadtoi",
+           "title":"Aires",
+           "index":6,
+           "duration":200
+        },
+        {
+           "time_stamp":1304,
+           "artist":"G Mills x Kyle McEvoy",
+           "title":"Haze",
+           "index":7,
+           "duration":183
+        },
+        {
+           "time_stamp":1487,
+           "artist":"Ruck P",
+           "title":"Coffee Break",
+           "index":8,
+           "duration":210
+        },
+        {
+           "time_stamp":1697,
+           "artist":"L'indécis",
+           "title":"Simplicity",
+           "index":9,
+           "duration":138
+        },
+        {
+           "time_stamp":1835,
+           "artist":"Epektase x nymano",
+           "title":"Wandering At Night",
+           "index":10,
+           "duration":144
+        },
+        {
+           "time_stamp":1979,
+           "artist":"Monma",
+           "title":"Yeah",
+           "index":11,
+           "duration":141
+        },
+        {
+           "time_stamp":2120,
+           "artist":"Swørn",
+           "title":"Sorry",
+           "index":12,
+           "duration":140
+        },
+        {
+           "time_stamp":2260,
+           "artist":"Philanthrope",
+           "title":"Beavis Pt. 1",
+           "index":13,
+           "duration":110
+        },
+        {
+           "time_stamp":2370,
+           "artist":"weird inside",
+           "title":"Stickers",
+           "index":14,
+           "duration":123
+        },
+        {
+           "time_stamp":2493,
+           "artist":"Evil Needle",
+           "title":"Hypnosis",
+           "index":15,
+           "duration":202
+        },
+        {
+           "time_stamp":2695,
+           "artist":"Brock Berrigan x goosetaf x Kyle McEvoy",
+           "title":"Pale Ale",
+           "index":16,
+           "duration":128
+        },
+        {
+           "time_stamp":2823,
+           "artist":"Toonorth",
+           "title":"9.23.19",
+           "index":17,
+           "duration":179
+        },
+        {
+           "time_stamp":3002,
+           "artist":"sleepy fish",
+           "title":"Schoolgrounds",
+           "index":18,
+           "duration":222
+        },
+        {
+           "time_stamp":3224,
+           "artist":"Robot Orchestra",
+           "title":"Peace of Mind",
+           "index":19,
+           "duration":147
+        },
+        {
+           "time_stamp":3371,
+           "artist":"SAINT WKND",
+           "title":"Bonfire",
+           "index":20,
+           "duration":154
+        },
+        {
+           "time_stamp":3525,
+           "artist":"Strehlow",
+           "title":"Angel Eyes",
+           "index":21,
+           "duration":175
+        },
+        {
+           "time_stamp":3700,
+           "artist":"The BREED",
+           "title":"Save Your Love",
+           "index":22,
+           "duration":182
+        },
+        {
+           "time_stamp":3882,
+           "artist":"fantompower x ideism",
+           "title":"On Holly",
+           "index":23,
+           "duration":121
+        }
+     ],
+     "color_pallete":[
+        "#aa9b83",
+        "#333658",
+        "#dadbe2",
+        "#b1882d",
+        "#583d3b"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "vw3iCuCRm0Q",
-    "cover": "https://f4.bcbits.com/img/a2417999185_10.jpg",
-    "name": "Chillhop Essentials Fall 2019"
+     "type":"album",
+     "genre":"undefined",
+     "name":"Chillhop Essentials Winter 2020",
+     "youtube_id":"i_cV8B2pjqk",
+     "cover":"https:\u002F\u002Ff4.bcbits.com\u002Fimg\u002Fa2903168500_10.jpg",
+     "duration":3971,
+     "tracks":[
+        {
+           "time_stamp":0,
+           "artist":"invention_",
+           "title":"Snowstalgia",
+           "index":0,
+           "duration":184
+        },
+        {
+           "time_stamp":184,
+           "artist":"Shopan",
+           "title":"There and Back",
+           "index":1,
+           "duration":192
+        },
+        {
+           "time_stamp":376,
+           "artist":"Ruck P & Shuko",
+           "title":"5 am",
+           "index":2,
+           "duration":133
+        },
+        {
+           "time_stamp":509,
+           "artist":"Swørn",
+           "title":"Going Back",
+           "index":3,
+           "duration":121
+        },
+        {
+           "time_stamp":630,
+           "artist":"goosetaf, xander. & Anbuu",
+           "title":"Frozen Firs",
+           "index":4,
+           "duration":207
+        },
+        {
+           "time_stamp":837,
+           "artist":"G Mills & Luke Otwell & Kyle McEvoy",
+           "title":"Ocean View",
+           "index":5,
+           "duration":184
+        },
+        {
+           "time_stamp":1021,
+           "artist":"Loop Schrauber & TRIBEZ.",
+           "title":"Cruisin",
+           "index":6,
+           "duration":158
+        },
+        {
+           "time_stamp":1179,
+           "artist":"Gustav Gustav & Dave Kellner",
+           "title":"Bandwidth",
+           "index":7,
+           "duration":142
+        },
+        {
+           "time_stamp":1321,
+           "artist":"Comodo",
+           "title":"Tuesday",
+           "index":8,
+           "duration":146
+        },
+        {
+           "time_stamp":1467,
+           "artist":"Miscél",
+           "title":"String Along",
+           "index":9,
+           "duration":95
+        },
+        {
+           "time_stamp":1562,
+           "artist":"niquo",
+           "title":"Our Star",
+           "index":10,
+           "duration":148
+        },
+        {
+           "time_stamp":1710,
+           "artist":"xander.",
+           "title":"Yesterdays",
+           "index":11,
+           "duration":160
+        },
+        {
+           "time_stamp":1870,
+           "artist":"Flitz&Suppe & Mr. Käfer",
+           "title":"Back When Marmots Used to Smoke",
+           "index":12,
+           "duration":128
+        },
+        {
+           "time_stamp":1998,
+           "artist":"Melodiesinfonie",
+           "title":"You and I",
+           "index":13,
+           "duration":184
+        },
+        {
+           "time_stamp":2182,
+           "artist":"sadtoi & L'Indécis",
+           "title":"Les Mouvements d'Hiver",
+           "index":14,
+           "duration":224
+        },
+        {
+           "time_stamp":2406,
+           "artist":"FloFilz & Kostral One",
+           "title":"Hau Nalu",
+           "index":15,
+           "duration":134
+        },
+        {
+           "time_stamp":2540,
+           "artist":"Ezzy",
+           "title":"Focus",
+           "index":16,
+           "duration":125
+        },
+        {
+           "time_stamp":2665,
+           "artist":"Kendall Miles",
+           "title":"Frozen in Time",
+           "index":17,
+           "duration":101
+        },
+        {
+           "time_stamp":2766,
+           "artist":"Stan Forebee, Josh Jacobson & The Field Tapes",
+           "title":"Snowland Sunset ft. Kennebec",
+           "index":18,
+           "duration":208
+        },
+        {
+           "time_stamp":2974,
+           "artist":"Blue Wednesday & tender spring",
+           "title":"Exhale",
+           "index":19,
+           "duration":144
+        },
+        {
+           "time_stamp":3118,
+           "artist":"auv",
+           "title":"Riverside Drive",
+           "index":20,
+           "duration":183
+        },
+        {
+           "time_stamp":3301,
+           "artist":"Cloudchord",
+           "title":"Inverno",
+           "index":21,
+           "duration":166
+        },
+        {
+           "time_stamp":3467,
+           "artist":"Liphe",
+           "title":"Almost Tomorrow",
+           "index":22,
+           "duration":183
+        },
+        {
+           "time_stamp":3650,
+           "artist":"Montell Fish",
+           "title":"Getting Stronger",
+           "index":23,
+           "duration":161
+        },
+        {
+           "time_stamp":3811,
+           "artist":"fantompower",
+           "title":"Constance",
+           "index":24,
+           "duration":160
+        }
+     ],
+     "color_pallete":[
+        "#ceacc1",
+        "#2c3b62",
+        "#923751",
+        "#6b6390",
+        "#c08d43"
+     ]
   },
   {
-    "type": "album",
-    "youtube_id": "i_cV8B2pjqk",
-    "cover": "https://f4.bcbits.com/img/a2903168500_10.jpg",
-    "name": "Chillhop Essentials Winter 2020"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"Love To The World Session #1",
+     "youtube_id":"90h7Pzaoys8",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002F90h7Pzaoys8\u002Fmaxresdefault.jpg",
+     "duration":3506,
+     "tracks":[
+        {
+           "index":0,
+           "title":"Love To The World Session #1",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3506
+        }
+     ],
+     "color_pallete":[
+        "#48423c",
+        "#d5c496",
+        "#9c8158",
+        "#98bcbf",
+        "#7b92b4"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "90h7Pzaoys8",
-    "name": "Love To The World Session #1",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"Set Live From DJ Mag",
+     "youtube_id":"roQuEqxjDx4",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002FroQuEqxjDx4\u002Fmaxresdefault.jpg",
+     "duration":3831,
+     "tracks":[
+        {
+           "index":0,
+           "title":"Set Live From DJ Mag",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3831
+        }
+     ],
+     "color_pallete":[
+        "#3c342b",
+        "#d4d4d7",
+        "#aab2c2",
+        "#907f68",
+        "#5a87ba"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "roQuEqxjDx4",
-    "name": "Set Live From DJ Mag",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"New Year's Eve",
+     "youtube_id":"AIu_1A40M6A",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002FAIu_1A40M6A\u002Fmaxresdefault.jpg",
+     "duration":3557,
+     "tracks":[
+        {
+           "index":0,
+           "title":"New Year's Eve",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3557
+        }
+     ],
+     "color_pallete":[
+        "#c1cce1",
+        "#3f4b5c",
+        "#62544c",
+        "#6d8db4",
+        "#72675d"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "AIu_1A40M6A",
-    "name": "New Year's Eve",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"Boiler Room: Streaming from Isolation",
+     "youtube_id":"TJBfwwZkHr8",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002FTJBfwwZkHr8\u002Fmaxresdefault.jpg",
+     "duration":3755,
+     "tracks":[
+        {
+           "index":0,
+           "title":"Boiler Room: Streaming from Isolation",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3755
+        }
+     ],
+     "color_pallete":[
+        "#30392f",
+        "#b7b7b7",
+        "#7c7777",
+        "#888ca3",
+        "#9aa4a0"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "TJBfwwZkHr8",
-    "name": "Boiler Room: Streaming from Isolation",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"I Love Techno Festival Livestream",
+     "youtube_id":"5kMGLrps35o",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002F5kMGLrps35o\u002Fmaxresdefault.jpg",
+     "duration":3582,
+     "tracks":[
+        {
+           "index":0,
+           "title":"I Love Techno Festival Livestream",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3582
+        }
+     ],
+     "color_pallete":[
+        "#a8a099",
+        "#332e2a",
+        "#55423b",
+        "#626664",
+        "#62544a"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "5kMGLrps35o",
-    "name": "I Love Techno Festival Livestream",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"Boiler Room x FLY Open Air 2019",
+     "youtube_id":"wL-VMOGAhzE",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002FwL-VMOGAhzE\u002Fmaxresdefault.jpg",
+     "duration":3583,
+     "tracks":[
+        {
+           "index":0,
+           "title":"Boiler Room x FLY Open Air 2019",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3583
+        }
+     ],
+     "color_pallete":[
+        "#232324",
+        "#c6b9c3",
+        "#869c9f",
+        "#75676d",
+        "#7f829c"
+     ]
   },
   {
-    "type": "mixtape",
-    "youtube_id": "wL-VMOGAhzE",
-    "name": "Boiler Room x FLY Open Air 2019",
-    "artist": "Folamour"
-  },
-  {
-    "type": "mixtape",
-    "youtube_id": "I1VK5wbqoUQ",
-    "name": "Release Party @Djoon",
-    "artist": "Folamour"
+     "type":"mixtape",
+     "genre":"undefined",
+     "name":"Release Party @Djoon",
+     "youtube_id":"I1VK5wbqoUQ",
+     "cover":"https:\u002F\u002Fimg.youtube.com\u002Fvi\u002FI1VK5wbqoUQ\u002Fmaxresdefault.jpg",
+     "duration":3680,
+     "tracks":[
+        {
+           "index":0,
+           "title":"Release Party @Djoon",
+           "artist":"Folamour",
+           "time_stamp":0,
+           "duration":3680
+        }
+     ],
+     "color_pallete":[
+        "#bc6072",
+        "#0e070d",
+        "#69303d",
+        "#6050a6",
+        "#7495e1"
+     ]
   }
 ]
